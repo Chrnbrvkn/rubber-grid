@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        /* Тест полосной адаптации! */
+
+
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+.papa{
+ 
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(500,1fr);
+    grid-template-rows: repeat(500,1fr);
+    background-color: rgb(213, 70, 163);
+}
+
+.child1{
+    grid-area: 1/1/span 100/span 500;
+    background-color: rgb(157, 137, 137);
+    display: grid;
+    grid-template: repeat(100,1fr)/repeat(100,1fr);
+}
+.test1{
+    grid-area: 1/1/span 50/span 50;
+    background-color: rgb(81, 198, 72);
+    /* min-width: 200px; */
+    width: 200px;
+}
+.child2{
+    grid-area: 100/1/span 100/span 500;
+    background-color: rgb(120, 47, 165);
+    display: grid;
+    grid-template: repeat(100,1fr)/repeat(100,1fr);
+}
+.test2{
+    grid-area: 1/20/span 50/span 50;
+    background-color: rgb(81, 198, 72);
+    /* min-width: 200px; */
+    width: 200px;
+}
+.child3{
+    grid-area: 200/1/span 100/span 500;
+    background-color: rgb(134, 189, 87);
+    display: grid;
+    grid-template: repeat(100,1fr)/repeat(100,1fr);
+}
+.test3{
+    grid-area: 1/40/span 50/span 50;
+    background-color: rgb(42, 38, 124);
+    /* min-width: 200px; */
+    width: 200px;
+}
+.child4{
+    grid-area: 300/1/span 100/span 500;
+    background-color: rgb(48, 128, 181);
+    display: grid;
+    grid-template: repeat(100,1fr)/repeat(100,1fr);
+}
+.test4{
+    grid-area: 1/60/span 50/span 50;
+    background-color: rgb(100, 19, 66);
+    /* min-width: 200px; */
+    width: 200px;
+}
+.child5{
+    grid-area: 400/1/span 100/span 500;
+    background-color: rgb(195, 92, 92);
+    display: grid;
+    grid-template: repeat(100,1fr)/repeat(100,1fr);
+}
+.test5{
+    grid-area: 1/80/span 50/span 50;
+    background-color: rgb(187, 155, 96);
+    /* min-width: 200px; */
+    width: 200px;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="papa">
+            <div class="child1">
+                <div class="test1">12312</div>
+            </div>
+            <div class="child2">
+                <div class="test2">231</div>
+            </div>
+            <div class="child3">
+                <div class="test3">12312</div>
+            </div>
+            <div class="child4">
+                <div class="test4"></div>
+            </div>
+            <div class="child5">
+                <div class="test5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
